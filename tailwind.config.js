@@ -13,6 +13,9 @@ module.exports = {
         'barlow-cond': ['Barlow Condensed', 'sans-serif'],
         barlow: ['Barlow', 'sans-serif'],
       },
+      gridTemplateRows: {
+        'page-layout': 'min-content 1fr',
+      },
     },
   },
   plugins: [],
