@@ -10,7 +10,7 @@ interface TheHamburgerProps {
 
 const TheHamburger: FC<TheHamburgerProps> = ({ isToggled, className = '', onToggle }) => {
   return (
-    <button className={`absolute z-50 md:hidden ${className}`} onClick={onToggle}>
+    <button className={`absolute z-50 sm:hidden ${className}`} onClick={onToggle}>
       {isToggled ? <CloseIcon /> : <HamburgerIcon />}
     </button>
   );
