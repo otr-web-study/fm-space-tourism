@@ -10,6 +10,6 @@
 
 @layer base {
   body {
-    @apply font-barlow text-white;
+    @apply font-barlow text-tertiary;
   }
 }

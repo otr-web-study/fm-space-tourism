@@ -45,7 +45,7 @@ const TheHeader = () => {
         isToggled={isHamburgerToggled}
         onToggle={handeHambburgerToggle}
       />
-      <nav className="lg:order-2">
+      <nav className="z-[1] lg:order-2">
         <ul
           className="fixed inset-y-0 left-1/3 right-0 flex flex-col gap-[clamp(1.5rem,5vw,3.5rem)] bg-white/[0.05] px-8 py-[min(20rem,15vh)] backdrop-blur-2xl max-sm:translate-x-full max-sm:transition max-sm:duration-500 max-sm:ease-in-out max-sm:aria-expanded:translate-x-[0] sm:static sm:flex-row sm:px-[clamp(3rem,7vw,7rem)] sm:py-0"
           aria-expanded={isHamburgerToggled}

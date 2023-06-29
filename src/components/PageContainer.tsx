@@ -9,7 +9,7 @@ interface PageContainerProps {
 const PageContainer: FC<PageContainerProps> = ({ children, className = '' }) => {
   return (
     <div
-      className={`bg- grid min-h-screen w-full grid-rows-page-layout bg-primary bg-cover bg-center ${className}`}
+      className={`grid min-h-screen w-full grid-rows-page-layout overflow-hidden bg-primary bg-cover bg-center ${className}`}
     >
       <TheHeader />
       {children}

@@ -16,6 +16,9 @@ module.exports = {
       gridTemplateRows: {
         'page-layout': 'min-content 1fr',
       },
+      gridTemplateColumns: {
+        'lg-content': 'minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(1rem, 1fr)',
+      },
       backgroundImage: {
         'home-tablet': 'url("assets/home/background-home-tablet.jpg")',
         'home-mobile': 'url("assets/home/background-home-mobile.jpg")',
@@ -23,5 +26,9 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addVariant }) {
+      addVariant('child', '& > *');
+    },
+  ],
 };
