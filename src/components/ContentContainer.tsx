@@ -8,7 +8,7 @@ interface ContentContainerProps {
 const ContentContainer: FC<ContentContainerProps> = ({ children, className = '' }) => {
   return (
     <main
-      className={`lg:grid- lg: grid place-items-center px-4 text-center child:max-w-[50ch] lg:grid-cols-lg-content lg:gap-x-8 ${className}`}
+      className={`grid place-items-center px-4 text-center sm:px-8 lg:grid-cols-lg-content lg:gap-x-8 ${className}`}
     >
       {children}
     </main>
