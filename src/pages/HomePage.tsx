@@ -5,7 +5,7 @@ import ContentContainer from 'components/ContentContainer';
 const HomePage = () => {
   return (
     <PageContainer className="bg-home-mobile sm:bg-home-tablet lg:bg-home-desktop">
-      <ContentContainer className="child:max-w-[50ch] lg:items-end lg:pb-[max(6rem,20vh)]">
+      <ContentContainer className="child:max-w-[50ch] lg:grid-cols-lg-content lg:items-end lg:pb-[max(6rem,20vh)]">
         <div className="lg:col-start-2">
           <h1 className="font-barlow-cond uppercase tracking-[2.7px] text-secondary sm:text-xl sm:tracking-[3.375px] lg:text-[28px] lg:tracking-[4.725px]">
             So, you want to travel to

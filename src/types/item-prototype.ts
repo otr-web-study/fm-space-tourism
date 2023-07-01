@@ -1,4 +1,4 @@
-interface ItemImages {
+export interface ItemImages {
   png: string;
   webp: string;
 }
