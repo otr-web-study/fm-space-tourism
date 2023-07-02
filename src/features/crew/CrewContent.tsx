@@ -12,7 +12,7 @@ const CrewContent = () => {
   }
 
   return (
-    <ContentContainer className="grid-rows-[repeat(3,min-content)] pt-6 sm:pt-10 lg:grid-cols-lg-content lg:grid-rows-[min-content_1fr] lg:pt-[76px]">
+    <ContentContainer className="grid-rows-[repeat(3,min-content)] px-4 pt-6 sm:px-8 sm:pt-10 lg:grid-cols-lg-content lg:grid-rows-[min-content_1fr] lg:pt-[76px]">
       <h1 className="w-full font-barlow-cond uppercase tracking-[2.7px] sm:text-start sm:text-xl sm:tracking-[3.375px]  lg:col-start-2 lg:text-[28px] lg:tracking-[4.725px]">
         <span className="mr-[clamp(1.15rem,2.5vw,1.75rem)] font-barlow-cond font-bold tracking-[2.7px] opacity-25 sm:text-xl sm:tracking-[3.375px] lg:text-[28px] lg:tracking-[4.725px]">
           02
@@ -42,7 +42,7 @@ const CrewContent = () => {
       <div className="row-start-2 mt-8 flex w-full items-end justify-center border-b border-b-[#383B4B] sm:row-start-3 sm:mt-10 sm:border-none lg:col-start-3 lg:row-span-2 lg:row-start-1 lg:mt-0 lg:h-full">
         <picture className="aspect-square max-w-[55%] lg:max-w-[508px]">
           <source srcSet={crew.images.webp} type="image/webp" />
-          <img src={crew.images.png} />
+          <img src={crew.images.png} alt="Crew member" />
         </picture>
       </div>
     </ContentContainer>

@@ -1,9 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { destinationsReducer } from 'features/destinations/destinations-slice';
 import { crewReducer } from 'features/crew/crew-slice';
+import { technologiesReduser } from 'features/technologies/technologies-slice';
 
 export const store = configureStore({
-  reducer: { destinations: destinationsReducer, crew: crewReducer },
+  reducer: {
+    destinations: destinationsReducer,
+    crew: crewReducer,
+    technologies: technologiesReduser,
+  },
   devTools: true,
 });
 

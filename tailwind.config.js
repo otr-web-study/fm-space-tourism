@@ -18,7 +18,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         'lg-content': 'minmax(2rem, 1fr) repeat(2, minmax(0, 35rem)) minmax(2rem, 1fr)',
-        'lg-crew-content': 'minmax(2rem, 1fr) minmax(0, 70rem) minmax(2rem, 1fr)',
+        'lg-technology-content': 'minmax(2rem, 1fr) minmax(0, 40rem) 1fr',
       },
       backgroundImage: {
         'home-mobile': 'url("assets/home/background-home-mobile.jpg")',
@@ -30,9 +30,9 @@ module.exports = {
         'crew-mobile': 'url("assets/crew/background-crew-mobile.jpg")',
         'crew-tablet': 'url("assets/crew/background-crew-tablet.jpg")',
         'crew-desktop': 'url("assets/crew/background-crew-desktop.jpg")',
-        'texhnology-mobile': 'url("assets/technology/background-technology-mobile.jpg")',
-        'texhnology-tablet': 'url("assets/technology/background-technology-tablet.jpg")',
-        'texhnology-desktop': 'url("assets/technology/background-technology-desktop.jpg")',
+        'technology-mobile': 'url("assets/technology/background-technology-mobile.jpg")',
+        'technology-tablet': 'url("assets/technology/background-technology-tablet.jpg")',
+        'technology-desktop': 'url("assets/technology/background-technology-desktop.jpg")',
       },
     },
   },

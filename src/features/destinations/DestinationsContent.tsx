@@ -13,7 +13,7 @@ const DestinationsContent = () => {
   }
 
   return (
-    <ContentContainer className="grid-rows-[repeat(2,min-content)] pb-12 pt-6 child:max-w-[50ch] sm:pt-10 sm:child:max-w-[63ch] lg:grid-cols-lg-content lg:grid-rows-1 lg:pt-[76px] lg:child:max-w-[53ch]">
+    <ContentContainer className="grid-rows-[repeat(2,min-content)] px-4 pb-12 pt-6 child:max-w-[50ch] sm:px-8 sm:pt-10 sm:child:max-w-[63ch] lg:grid-cols-lg-content lg:grid-rows-1 lg:pt-[76px] lg:child:max-w-[53ch]">
       <div className="flex h-full w-full flex-col items-center lg:col-start-2">
         <h1 className="w-full font-barlow-cond uppercase tracking-[2.7px] sm:text-start sm:text-xl sm:tracking-[3.375px] lg:text-[28px] lg:tracking-[4.725px]">
           <span className="mr-[clamp(1.15rem,2.5vw,1.75rem)] font-barlow-cond font-bold tracking-[2.7px] opacity-25 sm:text-xl sm:tracking-[3.375px] lg:text-[28px] lg:tracking-[4.725px]">
@@ -24,7 +24,7 @@ const DestinationsContent = () => {
         <div className="mb-[26px] mt-8 flex h-full w-full items-center justify-center sm:mb-14 sm:mt-[60px] lg:my-0">
           <picture className="aspect-square max-w-[170px] sm:max-w-[300px] lg:max-w-[445px]">
             <source srcSet={destination.images.webp} type="image/webp" />
-            <img src={destination.images.png} />
+            <img src={destination.images.png} alt="Planet" />
           </picture>
         </div>
       </div>
