@@ -7,9 +7,12 @@ interface ContentNavigationProps {
   navClassName: string;
   itemClassName: string;
   activeItemClassName: string;
-  withCaption?: boolean;
+  caption?: CaptionType;
   currentSlug: EntityId;
+  captionClassName?: string;
 }
+
+type CaptionType = 'slug' | 'index';
 
 const ContentNavigation: FC<ContentNavigationProps> = ({
   items,
@@ -17,19 +20,26 @@ const ContentNavigation: FC<ContentNavigationProps> = ({
   itemClassName,
   activeItemClassName,
   currentSlug,
-  withCaption = false,
+  caption,
+  captionClassName = '',
 }) => {
   const location = useLocation();
   const parent = location.pathname.split('/')[1] || '.';
 
-  const content = items.map((slug) => {
+  const content = items.map((slug, idx) => {
     const pathTo = typeof slug === 'string' ? slug : slug.toString();
-    const linkClassName = `${itemClassName} ${currentSlug === slug ? activeItemClassName : ''}`;
+    const linkClassName = `transition-all duration-200 ${itemClassName} ${
+      currentSlug === slug ? activeItemClassName : ''
+    }`;
 
     return (
       <li className="flex cursor-pointer" key={slug}>
         <NavLink to={`/${parent}/${pathTo}`} className={linkClassName}>
-          {withCaption && pathTo.toUpperCase()}
+          {caption && (
+            <span className={captionClassName}>
+              {caption === 'slug' ? pathTo.toUpperCase() : idx + 1}
+            </span>
+          )}
         </NavLink>
       </li>
     );

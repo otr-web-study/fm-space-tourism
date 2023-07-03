@@ -18,7 +18,8 @@ module.exports = {
       },
       gridTemplateColumns: {
         'lg-content': 'minmax(2rem, 1fr) repeat(2, minmax(0, 35rem)) minmax(2rem, 1fr)',
-        'lg-technology-content': 'minmax(2rem, 1fr) minmax(0, 40rem) 1fr',
+        'lg-technology-content':
+          'minmax(2rem, 1fr) minmax(0, 45rem) minmax(0, 25rem) minmax(2rem, 1fr)',
       },
       backgroundImage: {
         'home-mobile': 'url("assets/home/background-home-mobile.jpg")',

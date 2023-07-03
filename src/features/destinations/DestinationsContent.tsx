@@ -22,7 +22,7 @@ const DestinationsContent = () => {
           Pick your destination
         </h1>
         <div className="mb-[26px] mt-8 flex h-full w-full items-center justify-center sm:mb-14 sm:mt-[60px] lg:my-0">
-          <picture className="aspect-square max-w-[170px] sm:max-w-[300px] lg:max-w-[445px]">
+          <picture className="max-w-[170px] sm:max-w-[300px] lg:max-w-[445px]">
             <source srcSet={destination.images.webp} type="image/webp" />
             <img src={destination.images.png} alt="Planet" />
           </picture>
@@ -35,7 +35,7 @@ const DestinationsContent = () => {
           itemClassName="pb-2 font-barlow-cond text-sm tracking-[2.362px] text-secondary hover:border-b-[3px] hover:border-b-white/50 sm:pb-3 sm:text-base sm:tracking-[2.7px]"
           activeItemClassName="text-white border-b-[3px] !border-b-white"
           currentSlug={slug}
-          withCaption={true}
+          caption="slug"
         />
         <article>
           <h2 className="mt-5 font-bellefair text-[56px] uppercase sm:mt-8 sm:text-[80px] lg:mt-9 lg:text-start lg:text-[100px] lg:leading-[115px]">

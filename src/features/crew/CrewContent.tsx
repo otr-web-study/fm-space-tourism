@@ -40,7 +40,7 @@ const CrewContent = () => {
         />
       </div>
       <div className="row-start-2 mt-8 flex w-full items-end justify-center border-b border-b-[#383B4B] sm:row-start-3 sm:mt-10 sm:border-none lg:col-start-3 lg:row-span-2 lg:row-start-1 lg:mt-0 lg:h-full">
-        <picture className="aspect-square max-w-[55%] lg:max-w-[508px]">
+        <picture className="max-w-[55%] lg:max-w-[508px]">
           <source srcSet={crew.images.webp} type="image/webp" />
           <img src={crew.images.png} alt="Crew member" />
         </picture>

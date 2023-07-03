@@ -5,6 +5,7 @@ import { Technology, LocalTechnology } from 'types/technology';
 function normalizeData(data: Technology[]): LocalTechnology[];
 function normalizeData(data: Crew[]): LocalCrew[];
 function normalizeData(data: Destination[]): LocalDestination[];
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function normalizeData(data: any[]): any[] {
   return data.map((item) => {
     return {
