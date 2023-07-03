@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution] ()
+- [Solution] (https://www.frontendmentor.io/solutions/react-redux-typescript-tailwindcss-IzuC-pivEy)
 - [Live Site] (https://frolicking-twilight-881957.netlify.app/)
 
 ### Built with
